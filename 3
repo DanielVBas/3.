@@ -1,0 +1,15 @@
+data(iris)
+
+dados <- iris[, 1:4]
+matriz_distancias <- dist(dados)
+
+resultado_hc <- hclust(matriz_distancias, method = "complete")
+
+plot(
+  resultado_hc, 
+  main = "Dendrograma - Clustering Hierárquico",
+  xlab = "Observações",
+  ylab = "Distância",
+  sub = "",
+  cex = 0.1 # Ajusta o tamanho dos rótulos
+)
