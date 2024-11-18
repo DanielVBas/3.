@@ -1,1 +1,12 @@
+O código realiza uma análise de Clustering Hierárquico utilizando o conjunto de dados iris, que contém características físicas de três espécies de flores (setosa, versicolor e virginica). A análise tem como objetivo identificar padrões e agrupamentos com base em medidas numéricas.
+São selecionadas as colunas correspondentes às características físicas das flores: comprimento e largura das sépalas e pétalas. A coluna Species, categórica, é excluída, pois o método de clustering hierárquico opera sobre variáveis numéricas.
+A função dist() calcula a matriz de distâncias entre as observações, utilizando a distância Euclidiana como métrica padrão. Essa matriz mede a dissimilaridade entre pares de observações, essencial para o agrupamento.
+A função hclust() executa o Clustering Hierárquico. O método complete linkage (ligação completa) é usado, onde a distância entre clusters é definida pela maior distância entre pares de pontos, um de cada cluster. Esse método tende a criar clusters compactos.
+O dendrograma exibe a hierarquia dos agrupamentos. O eixo X representa as observações e o eixo Y mostra a distância (ou dissimilaridade) em que os clusters foram unidos. A parametrização de cex ajusta o tamanho dos rótulos para melhor legibilidade.
+O dendrograma permite identificar agrupamentos naturais no conjunto de dados. Um corte adequado pode dividir as observações em três clusters principais, frequentemente correspondentes às três espécies de flores.Este tipo de análise é útil em diversas áreas, como segmentação de dados e análise exploratória para identificar padrões ocultos.
+
+
+
+
+
 
